@@ -17,3 +17,14 @@ a78c66013208        local/centos-w-sshd-key          "/usr/sbin/sshd -D"      2 
 0cb00db4d8b7        jenkins/jenkins:lts              "/sbin/tini -- /usr/…"   3 weeks ago         Exited (143) 13 days ago                           jenkins-srv
 bdeb21226ccd        puppet/puppetserver-standalone   "dumb-init /docker-e…"   4 weeks ago         Exited (143) 11 days ago                           puppet
 ~$ 
+
+
+
+
+
+puppet agent --verbose --onetime --no-daemonize --summarize
+
+
+======puppet
+manifests: 
+/etc/puppetlabs/code/environments/
