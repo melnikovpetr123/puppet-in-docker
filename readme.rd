@@ -1,3 +1,13 @@
+docker run --name jenkins-master -h jenkins-master -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-alpine
+
+docker run --rm -d --name puppet --hostname puppet puppet/puppetserver-standalone
+
+/etc/puppetlabs/code/r10k-config/r10k.yaml
+
+r10k deploy environment -pv
+
+
+
 ~$ sudo docker images
 [sudo] password for melnikov: 
 REPOSITORY                       TAG                 IMAGE ID            CREATED             SIZE
